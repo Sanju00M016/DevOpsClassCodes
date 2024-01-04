@@ -1,11 +1,14 @@
-mypipeline{
-    tools{
+new commit  pipeline{
+ new chnage for commit   tools{
         jdk 'myjava'
         maven 'mymaven131'
     }
+    //more commits on the file
+    //commit on github-- new one
     agent any
+    new ctsage added
     stages{
-        stage('Checkout'){
+        stage('Checkout on git'){
             agent any
             steps{
                 git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
